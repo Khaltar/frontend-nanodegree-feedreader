@@ -100,10 +100,30 @@ $(function() {
     });
         
 
-    /* TODO: Write a new test suite named "New Feed Selection"
-
+    /* TODO: Write a new test suite named "New Feed Selection" */
+    
+    describe('New Feed Selection', function() {
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        
+        // estabilish first feed 
+        
+        var firstFeedRegistry;
+        
+        beforeEach(function(done) {
+            loadFeed(1, function() {
+                firstFeedRegistry = $('.feed').html();
+                done();
+            });
+        });
+        
+        it('new feeds should change content', function(done) {
+            loadFeed(2, function() {
+                expect($('.feed').html()).not.toEqual(firstFeedRegistry);
+                done();
+            });
+        });
+    }); 
 }());
