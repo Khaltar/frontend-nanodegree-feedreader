@@ -39,4 +39,4 @@ You will learn how to use Jasmine to write a number of tests against a pre-exist
 14. When complete - all of your tests should pass.
 
 # Instructions to run
-Just clone or fork the repo to your pc using gitBash and open the index.html file. If you don't know how to use Git or cannot use it in your pc, you can access the site [here](http://khaltar.github.io/frontend-nanodegree-feedreader)
+Just clone or fork the repo to your pc using gitBash and open the index.html file. If you don't know how to use Git or cannot use it in your pc, you can access the site [here](http://khaltar.github.io/frontend-nanodegree-feedreader/)
